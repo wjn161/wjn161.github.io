@@ -101,6 +101,10 @@ a.button[disabled]:hover {
     line-height:200%;
     font-size: 40px;
 }
+
+#preview #normal-about{
+    display: none;
+}
 /** Page **/
 .page {
     margin:0 auto;
