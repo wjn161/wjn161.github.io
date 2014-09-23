@@ -383,8 +383,14 @@ a.button[disabled]:hover {
 
     #preview #code {
         margin-top: 30px;
+        display: none;
     }
-
+    #preview #normal-about{
+        display: block;
+    }
+    #preview #normal-about p{
+        line-height: 100%;
+    }
     #preview .footer {
         position:relative;
         bottom:0px;
