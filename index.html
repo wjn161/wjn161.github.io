@@ -1,126 +1,58 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="About Me : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>About Me</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/wjn161">View on GitHub</a>
-
-          <h1 id="project_title">About Me</h1>
-          <h2 id="project_tagline"></h2>
-
-        </header>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="src/css/style.css"/>
+    <link rel="stylesheet" href="src/css/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="src/css/bootstrap/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="src/css/prism.css"/>
+    <title>168miles</title>
+</head>
+<body>
+<div id="lead">
+    <div class="box">
+        <h1>168 Miles</h1>
+        <p>A place to record my fucking<br>life and dreams.</p>
+        <p>(build on Sep 23th 2014)</p>
+        <a href="./list.html" class="button">View More</a>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <div class="highlight highlight-javascript"><pre><span class="cm">/**</span>
-<span class="cm"> * Created by my parents.</span>
-<span class="cm"> * Created date: 15th March 1988</span>
-<span class="cm"> * Last updated: 26th June 2014</span>
-<span class="cm"> */</span>
-<span class="kd">var</span> <span class="nx">me</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="nx">name</span><span class="o">:</span> <span class="s1">'Joe Wu'</span> <span class="o">||</span> <span class="s1">'吴建南'</span><span class="p">,</span>
-    <span class="nx">nickName</span><span class="o">:</span><span class="s1">'_Me'</span><span class="p">,</span>
-    <span class="nx">gender</span><span class="o">:</span> <span class="s1">'male'</span><span class="p">,</span>
-    <span class="nx">married</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
-    <span class="nx">address</span><span class="o">:</span> <span class="s1">'Hangzhou, Zhejiang, China'</span><span class="p">,</span>
-    <span class="nx">website</span><span class="o">:</span> <span class="p">[</span><span class="s1">'www.wujn.me'</span><span class="p">,</span><span class="s1">'168miles.com'</span><span class="p">],</span>
-    <span class="nx">interests</span><span class="o">:</span> <span class="p">[</span><span class="s1">'coding'</span><span class="p">,</span> <span class="s1">'films'</span><span class="p">,</span> <span class="s1">'animation'</span><span class="p">,</span> <span class="s1">'basketball'</span><span class="p">]</span>
-<span class="p">};</span>
-</pre></div>
-
-<hr><div class="highlight highlight-SQL"><pre><span class="c1">--Work Experience</span>
-<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="p">[</span><span class="n">WorkExprience</span><span class="p">]</span>
-    <span class="p">(</span>
-      <span class="p">[</span><span class="n">ID</span><span class="p">]</span> <span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="k">IDENTITY</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-                 <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">,</span>
-      <span class="p">[</span><span class="n">Company</span><span class="p">]</span> <span class="p">[</span><span class="n">nvarchar</span><span class="p">](</span><span class="mi">50</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="p">,</span>
-      <span class="p">[</span><span class="k">Location</span><span class="p">]</span> <span class="p">[</span><span class="n">nvarchar</span><span class="p">](</span><span class="mi">50</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="p">,</span>
-      <span class="p">[</span><span class="n">BeginDate</span><span class="p">]</span> <span class="p">[</span><span class="n">datetime</span><span class="p">]</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="p">,</span>
-      <span class="p">[</span><span class="n">EndDate</span><span class="p">]</span> <span class="p">[</span><span class="n">datetime</span><span class="p">]</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="p">,</span>
-      <span class="p">[</span><span class="n">JobTitle</span><span class="p">]</span> <span class="p">[</span><span class="n">nvarchar</span><span class="p">](</span><span class="mi">50</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="p">,</span>
-      <span class="p">[</span><span class="n">Description</span><span class="p">]</span> <span class="p">[</span><span class="n">nvarchar</span><span class="p">](</span><span class="mi">150</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span>
-    <span class="p">)</span>
-<span class="k">GO</span>
-<span class="c1">--Insert Values</span>
-<span class="c1">--#1</span>
-<span class="k">INSERT</span>  <span class="k">INTO</span> <span class="p">[</span><span class="n">WorkExprience</span><span class="p">]</span>
-        <span class="p">(</span> <span class="p">[</span><span class="n">Company</span><span class="p">]</span> <span class="p">,</span>
-          <span class="p">[</span><span class="k">Location</span><span class="p">]</span> <span class="p">,</span>
-          <span class="p">[</span><span class="n">BeginDate</span><span class="p">]</span> <span class="p">,</span>
-          <span class="p">[</span><span class="n">EndDate</span><span class="p">]</span> <span class="p">,</span>
-          <span class="p">[</span><span class="n">JobTitle</span><span class="p">]</span> <span class="p">,</span>
-          <span class="p">[</span><span class="n">Description</span><span class="p">]</span>
-        <span class="p">)</span>
-<span class="k">VALUES</span>  <span class="p">(</span> <span class="s1">'Kunming SunWise Software Company'</span> <span class="p">,</span>
-          <span class="s1">'Kunming,Yunnan'</span> <span class="p">,</span>
-          <span class="s1">'2010/01/01'</span> <span class="p">,</span>
-          <span class="s1">'2010/08/01'</span> <span class="p">,</span>
-          <span class="s1">'Assistant Software Engineer'</span> <span class="p">,</span>
-          <span class="s1">'As a intern, I learned lots of experience in developing industry software.</span>
-<span class="s1">         Primaryly worked on Asp.net and SQL Server'</span>
-        <span class="p">)</span>
-<span class="c1">--#2</span>
-<span class="k">INSERT</span>  <span class="k">INTO</span> <span class="p">[</span><span class="n">WorkExprience</span><span class="p">]</span>
-        <span class="p">(</span> <span class="p">[</span><span class="n">Company</span><span class="p">]</span> <span class="p">,</span>
-          <span class="p">[</span><span class="k">Location</span><span class="p">]</span> <span class="p">,</span>
-          <span class="p">[</span><span class="n">BeginDate</span><span class="p">]</span> <span class="p">,</span>
-          <span class="p">[</span><span class="n">EndDate</span><span class="p">]</span> <span class="p">,</span>
-          <span class="p">[</span><span class="n">JobTitle</span><span class="p">]</span> <span class="p">,</span>
-          <span class="p">[</span><span class="n">Description</span><span class="p">]</span>
-        <span class="p">)</span>
-<span class="k">VALUES</span>  <span class="p">(</span> <span class="s1">'Guangdong KingSense'</span> <span class="p">,</span>
-          <span class="s1">'Hangzhou,Zhejiang'</span> <span class="p">,</span>
-          <span class="s1">'2010/10/01'</span> <span class="p">,</span>
-          <span class="s1">'2011/04/01'</span> <span class="p">,</span>
-          <span class="s1">'Software Engineer'</span> <span class="p">,</span>
-          <span class="s1">'Primaryly worked on WindForm and learned something about Repository Software'</span>
-        <span class="p">)</span>
-<span class="c1">--#3</span>
-<span class="k">INSERT</span>  <span class="k">INTO</span> <span class="p">[</span><span class="n">WorkExprience</span><span class="p">]</span>
-        <span class="p">(</span> <span class="p">[</span><span class="n">Company</span><span class="p">]</span> <span class="p">,</span>
-          <span class="p">[</span><span class="k">Location</span><span class="p">]</span> <span class="p">,</span>
-          <span class="p">[</span><span class="n">BeginDate</span><span class="p">]</span> <span class="p">,</span>
-          <span class="p">[</span><span class="n">EndDate</span><span class="p">]</span> <span class="p">,</span>
-          <span class="p">[</span><span class="n">JobTitle</span><span class="p">]</span> <span class="p">,</span>
-          <span class="p">[</span><span class="n">Description</span><span class="p">]</span>
-        <span class="p">)</span>
-<span class="k">VALUES</span>  <span class="p">(</span> <span class="s1">'HundSun ShuMi'</span> <span class="p">,</span>
-          <span class="s1">'Hangzhou,Zhejiang'</span> <span class="p">,</span>
-          <span class="s1">'2011/05/01'</span> <span class="p">,</span>
-          <span class="s1">'2014/06/26'</span> <span class="p">,</span>
-          <span class="s1">'Software Engineer'</span> <span class="p">,</span>
-          <span class="s1">'working on internet and fund.to be continued...'</span>
-        <span class="p">)</span> 
-<span class="c1">--1 row affected</span>
-<span class="c1">--1 row affected</span>
-<span class="c1">--1 row affected</span>
-</pre></div>
-      </section>
+</div>
+<div id="preview">
+    <div class="box">
+        <h1>About Me</h1>
+        <div id="code">
+            <pre><code class="language-javascript">
+        /**
+        * Created by my parents
+        * Created date: 15th March 1988
+        * Last updated: 23th Sep 2014
+        */
+        var me = {
+            name: 'Joe Wu' || '吴建南',
+            nickName: '_Me',
+            gender: 'male',
+            married: false,
+            age: 26,
+            job-title: 'coder',
+            company: 'fund123.cn'
+            born: 'Dali, Yunnan, China',
+            location: 'Hangzhou, Zhejiang, China',
+            interests: ['coding', 'traveling', 'reading'],
+            email: 'wjn161#gmail.com'
+         };
+            </code></pre>
+        </div>
     </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+    <div class="footer">
+        2014 &copy; <a href="http://168miles.com">wujn</a>. All right reserved.
     </div>
-
-    
-
-  </body>
+</div>
+<a target="_blank" href="https://github.com/wjn161"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+<script src="src/js/jquery.min.js"></script>
+<script src="src/js/prism.js"></script>
+<script src="src/js/bootstrap.min.js"></script>
+<script src="src/js/index.js"></script>
+</body>
 </html>
