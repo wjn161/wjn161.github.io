@@ -142,8 +142,8 @@ a.button[disabled]:hover {
 }
 
 .page .nav .item {
-    margin-top:30px;
-}
+     margin-top:30px;
+ }
 
 .page .content {
     margin-left:30%;
@@ -157,6 +157,9 @@ a.button[disabled]:hover {
 .page .content .article-item a{
    color:#333333;
 }
+.page .content .article-item a:hover{
+    color:#FF6600;
+}
 .page .content .article-item-footer{
 font-size: 12px;
     color: #888888;
@@ -164,6 +167,9 @@ font-size: 12px;
 }
 .page .content .content-title {
     border-bottom:1px solid #FF6600;
+}
+.page .content .content-footer{
+    text-align: center;
 }
 .page .content h1,
 .page .content h2,
@@ -468,4 +474,9 @@ font-size: 12px;
 .color-fix li a:hover{
     color: #ffffff;
     background-color: #ff6600;
+}
+
+/*detail page*/
+.page .nav .item .post-list{
+    margin-top:30px;
 }
