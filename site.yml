@@ -1,0 +1,26 @@
+title: 168miles
+subtitle: A place to record my fucking life and dreams
+link: Homepage link
+meta:
+  description: A place to record my fucking life and dreams
+  keywords: !!seq
+    - 168miles
+    - blog
+    - wujn
+  author: wujn
+master:
+  name: wujn
+  about: wujn
+  email: wjn161@gmail.com
+rss:
+  title: 168miles
+  desc: A place to record my fucking life and dreams
+  lang: zh-cn
+  max: 10
+copyright:
+  owner: wujn
+  beginYear: 2014
+  endYear: 2014
+theme: default
+codetheme: light
+baseUrl: http://localhost:63342/myblog

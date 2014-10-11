@@ -147,7 +147,7 @@ a.button[disabled]:hover {
 
 .page .content {
     margin-left:30%;
-    padding:50px 30px;
+    padding:18px 30px 50px 30px;
     width:70%;
 }
 .page .content .article-item{
