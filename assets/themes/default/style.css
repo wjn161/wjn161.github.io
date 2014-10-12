@@ -2,14 +2,14 @@
  * Structure
  */
 body {
-    font-family: sans-serif,microsoft yahei;
+    font-family: microsoft yahei;
     font-weight: 300;
     background:#fff;
     color: #333;
     font-size:14px;
 }
 h1, h2, h3, h4, h5 {
-    font-family: sans-serif,microsoft yahei;
+    font-family: microsoft yahei;
 }
 p {
     line-height:160%;
