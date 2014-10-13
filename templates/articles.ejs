@@ -1,30 +1,42 @@
-<% include inc/header %>
-<div id="main">
-    <div id="main-inner">
-        <div id="topnav">
-            <ul>
-                <li><a href="/">首页</a></li>
-                <li class="sep"> | </li>
-                <li><a href="/tag.html">标签</a></li>
-                <% include inc/navbar %>
-            </ul>
-            <div style="clear:both;"></div>
-        </div>
+<% include inc/detail_header %>
+<div class="page">
+    <% include inc/navbar %>
+    <div class="content">
+        <div class="article-body">
         <div id="article-title">
-            <a href="<%= article.link %>"><%= article.title %></a>
+            <h1>
+                <a href="<%=site.baseUrl%><%= article.link %>"><%= article.title %></a>
+            </h1>
         </div>
         <div id="article-meta">
             作者 <%= article.author %> | 发布于 <%= article.postedOn %>
         </div>
         <div id="article-tags">
         <% article.tags.forEach(function (tag) { %>
-        <a class="tag" href="/tag.html#<%= tag %>"><%= tag %></a>
+        <a class="tag" href="<%=site.baseUrl%>/tag.html#<%= tag %>"><%= tag %></a>
         <% }); %>
         </div>
         <div id="article-content">
             <%- article.content %>
         </div>
+            <div id="article-comment">
+                <!-- 多说评论框 start -->
+                <div class="ds-thread" data-thread-key="<%=article.id%>" data-title="<%=article.title%>" data-url="<%=article.link%>"></div>
+                <!-- 多说评论框 end -->
+                <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+                <script type="text/javascript">
+                    var duoshuoQuery = {short_name:"168miles"};
+                    (function() {
+                        var ds = document.createElement('script');
+                        ds.type = 'text/javascript';ds.async = true;
+                        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                        ds.charset = 'UTF-8';
+                        (document.getElementsByTagName('head')[0]
+                                || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                </script>
+                <!-- 多说公共JS代码 end -->
+            </div>
         <% include inc/article_footer_plugin %>
-    </div>
 </div>
-<% include inc/footer %>
+<% include inc/detail_footer %>

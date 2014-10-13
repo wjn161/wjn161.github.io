@@ -1,6 +1,3 @@
-Papery - create your simple, fast & elegant blog with plain text.
-
-# 使用说明
 ## 安装及升级
 首先要保证机器上安装有[NodeJS](http://nodejs.org/)及[npm](https://npmjs.org/)。
 
@@ -227,7 +224,6 @@ $$e^{i\\pi}+1=0$$
 
 会在当前位置根据文章outline自动生成TOC。
 
-# 高级使用
 ## 扩展配置及自定义模板
 ### 自定义模板
 papery使用[ejs](https://github.com/visionmedia/ejs)作为模板引擎。模板文件全部放在templates目录下，后缀名为ejs。对于有html基础的用户可以自己对模板进行定制。
@@ -306,25 +302,3 @@ cd papery
 npm test
 ```
 
-# License
-[The MIT License (MIT)](http://opensource.org/licenses/MIT)
-
-Copyright (c) 2013 Eric Zhang
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.

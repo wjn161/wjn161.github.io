@@ -4,7 +4,7 @@
         <title>168miles</title>
         <link>Homepage link</link>
         <description>A place to record my fucking life and dreams</description>
-        <lastBuildDate>Mon, 13 Oct 2014 13:31:37 +0800</lastBuildDate>
+        <lastBuildDate>Mon, 13 Oct 2014 16:28:34 +0800</lastBuildDate>
         <language>zh-cn</language>
         
         <item>
@@ -13,9 +13,7 @@
             <guid>Homepage link/articles/papery-quickstart.html</guid>
             <author>wjn161@gmail.com wujn</author>
             <pubDate>Wed, 02 Jan 2013 15:56:00 +0800</pubDate>
-            <description>&lt;p&gt;Papery - create your simple, fast &amp; elegant blog with plain text.&lt;/p&gt;
-&lt;h1 id=&quot;使用说明&quot;&gt;使用说明&lt;/h1&gt;
-&lt;h2 id=&quot;安装及升级&quot;&gt;安装及升级&lt;/h2&gt;
+            <description>&lt;h2 id=&quot;安装及升级&quot;&gt;安装及升级&lt;/h2&gt;
 &lt;p&gt;首先要保证机器上安装有&lt;a href=&quot;http://nodejs.org/&quot;&gt;NodeJS&lt;/a&gt;及&lt;a href=&quot;https://npmjs.org/&quot;&gt;npm&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;NodeJs版本需要&gt;=0.10。&lt;/p&gt;
 &lt;h3 id=&quot;安装&quot;&gt;安装&lt;/h3&gt;
@@ -183,7 +181,6 @@ $$e^{i\pi}+1=0$$&lt;/p&gt;
 &lt;pre class=&quot;prettyprint linenums lang-html&quot;&gt;&lt;!-- toc --&gt;
 &lt;/pre&gt;
 &lt;p&gt;会在当前位置根据文章outline自动生成TOC。&lt;/p&gt;
-&lt;h1 id=&quot;高级使用&quot;&gt;高级使用&lt;/h1&gt;
 &lt;h2 id=&quot;扩展配置及自定义模板&quot;&gt;扩展配置及自定义模板&lt;/h2&gt;
 &lt;h3 id=&quot;自定义模板&quot;&gt;自定义模板&lt;/h3&gt;
 &lt;p&gt;papery使用&lt;a href=&quot;https://github.com/visionmedia/ejs&quot;&gt;ejs&lt;/a&gt;作为模板引擎。模板文件全部放在templates目录下，后缀名为ejs。对于有html基础的用户可以自己对模板进行定制。&lt;/p&gt;
@@ -243,120 +240,6 @@ $$e^{i\pi}+1=0$$&lt;/p&gt;
 &lt;pre class=&quot;prettyprint linenums lang-bash&quot;&gt;cd papery
 npm test
 &lt;/pre&gt;
-&lt;h1 id=&quot;license&quot;&gt;License&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;The MIT License (MIT)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Copyright (c) 2013 Eric Zhang&lt;/p&gt;
-&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the &quot;Software&quot;), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:&lt;/p&gt;
-&lt;p&gt;The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.&lt;/p&gt;
-&lt;p&gt;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.&lt;/p&gt;
-</description>
-        </item>
-        
-        <item>
-            <title>代码与数学公式示例</title>
-            <link>Homepage link/articles/code-and-math.html?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=rss</link>
-            <guid>Homepage link/articles/code-and-math.html</guid>
-            <author>wjn161@gmail.com wujn</author>
-            <pubDate>Tue, 01 Jan 2013 15:56:00 +0800</pubDate>
-            <description>&lt;h1 id=&quot;这是一段代码&quot;&gt;这是一段代码&lt;/h1&gt;
-&lt;pre class=&quot;prettyprint linenums lang-c&quot;&gt;#include &lt;stdio.h&gt;
-
-int main(int argc, char** argv) {
-    printf(&quot;%s\n&quot;, &quot;Hello, World!&quot;);
-}
-&lt;/pre&gt;
-&lt;h1 id=&quot;这是一些数学公式&quot;&gt;这是一些数学公式&lt;/h1&gt;
-&lt;p&gt;\[e^{i\pi}+1=0\]&lt;/p&gt;
-&lt;p&gt;\[\begin{pmatrix}
-  1/\sqrt{2}  &amp; 1/\sqrt{2} \\
-  -1/\sqrt{2} &amp; 1/\sqrt{2}
-\end{pmatrix}
-\begin{pmatrix}
-  3 \\
-  2
-\end{pmatrix}
-=
-\begin{pmatrix}
-  5/\sqrt{2} \\
-  -1/\sqrt{2}
-\end{pmatrix}\]&lt;/p&gt;
-&lt;p&gt;\[Var(a)=\frac{1}{m}\sum_{i=1}^m{(a_i-\mu)^2}\]&lt;/p&gt;
-</description>
-        </item>
-        
-        <item>
-            <title>代码与数学公式示例</title>
-            <link>Homepage link/articles/code-and-math.html?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=rss</link>
-            <guid>Homepage link/articles/code-and-math.html</guid>
-            <author>wjn161@gmail.com wujn</author>
-            <pubDate>Tue, 01 Jan 2013 15:56:00 +0800</pubDate>
-            <description>&lt;h1 id=&quot;这是一段代码&quot;&gt;这是一段代码&lt;/h1&gt;
-&lt;pre class=&quot;prettyprint linenums lang-c&quot;&gt;#include &lt;stdio.h&gt;
-
-int main(int argc, char** argv) {
-    printf(&quot;%s\n&quot;, &quot;Hello, World!&quot;);
-}
-&lt;/pre&gt;
-&lt;h1 id=&quot;这是一些数学公式&quot;&gt;这是一些数学公式&lt;/h1&gt;
-&lt;p&gt;\[e^{i\pi}+1=0\]&lt;/p&gt;
-&lt;p&gt;\[\begin{pmatrix}
-  1/\sqrt{2}  &amp; 1/\sqrt{2} \\
-  -1/\sqrt{2} &amp; 1/\sqrt{2}
-\end{pmatrix}
-\begin{pmatrix}
-  3 \\
-  2
-\end{pmatrix}
-=
-\begin{pmatrix}
-  5/\sqrt{2} \\
-  -1/\sqrt{2}
-\end{pmatrix}\]&lt;/p&gt;
-&lt;p&gt;\[Var(a)=\frac{1}{m}\sum_{i=1}^m{(a_i-\mu)^2}\]&lt;/p&gt;
-</description>
-        </item>
-        
-        <item>
-            <title>代码与数学公式示例</title>
-            <link>Homepage link/articles/code-and-math.html?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=rss</link>
-            <guid>Homepage link/articles/code-and-math.html</guid>
-            <author>wjn161@gmail.com wujn</author>
-            <pubDate>Tue, 01 Jan 2013 15:56:00 +0800</pubDate>
-            <description>&lt;h1 id=&quot;这是一段代码&quot;&gt;这是一段代码&lt;/h1&gt;
-&lt;pre class=&quot;prettyprint linenums lang-c&quot;&gt;#include &lt;stdio.h&gt;
-
-int main(int argc, char** argv) {
-    printf(&quot;%s\n&quot;, &quot;Hello, World!&quot;);
-}
-&lt;/pre&gt;
-&lt;h1 id=&quot;这是一些数学公式&quot;&gt;这是一些数学公式&lt;/h1&gt;
-&lt;p&gt;\[e^{i\pi}+1=0\]&lt;/p&gt;
-&lt;p&gt;\[\begin{pmatrix}
-  1/\sqrt{2}  &amp; 1/\sqrt{2} \\
-  -1/\sqrt{2} &amp; 1/\sqrt{2}
-\end{pmatrix}
-\begin{pmatrix}
-  3 \\
-  2
-\end{pmatrix}
-=
-\begin{pmatrix}
-  5/\sqrt{2} \\
-  -1/\sqrt{2}
-\end{pmatrix}\]&lt;/p&gt;
-&lt;p&gt;\[Var(a)=\frac{1}{m}\sum_{i=1}^m{(a_i-\mu)^2}\]&lt;/p&gt;
 </description>
         </item>
         

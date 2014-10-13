@@ -1,65 +1,58 @@
 <!doctype html>
 <html>
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="description" content="A place to record my fucking life and dreams"/>
-        <meta name="keywords" content="168miles,blog,wujn"/>
-        <meta name="author" content="wujn"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-        <title>168miles_Papery快速指南
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="A place to record my fucking life and dreams"/>
+    <meta name="keywords" content="168miles,blog,wujn"/>
+    <meta name="author" content="wujn"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>168miles_Papery快速指南
 </title>
-        <link rel="stylesheet" href="http://168miles.com/assets/vendor/bootstrap/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="http://168miles.com/assets/vendor/bootstrap/css/bootstrap-theme.min.css"/>
-        <link rel="stylesheet" href="http://168miles.com/assets/vendor/prism/prism.css"/>
-        <link rel="stylesheet" href="http://168miles.com/assets/themes/default/style.css"/>
-        
-    </head>
-    <body>
+    <link rel="stylesheet" href="http://localhost:63342/wjn161.github.io/assets/vendor/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://localhost:63342/wjn161.github.io/assets/vendor/bootstrap/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="http://localhost:63342/wjn161.github.io/assets/vendor/prettifyjs/prettify-light.css"/>
+    <link rel="stylesheet" href="http://localhost:63342/wjn161.github.io/assets/themes/default/style.css"/>
+    
+</head>
+<body>
 
-<div id="main">
-    <div id="main-inner">
-        <div id="topnav">
-            <ul>
-                <li><a href="/">首页</a></li>
-                <li class="sep"> | </li>
-                <li><a href="/tag.html">标签</a></li>
-                <div class="nav">
+<div class="page">
+    <div class="nav">
         <h1>168miles</h1>
         <p>A place to record my fucking<br>life and dreams.</p>
         <p>(build on Sep 23th 2014)</p>
         <div class="item">
-            <a href="http://168miles.com/index.html" class="button">Home</a>
+            <a href="http://localhost:63342/wjn161.github.io/index.html" class="button">Home</a>
             <br>
-            <a href="http://168miles.com/list.html" class="button">Notes</a>
+            <a href="http://localhost:63342/wjn161.github.io/list.html" class="button">Notes</a>
             <br>
-            <a href="http://168miles.com/pages/photos.html" class="button">Photos</a>
+            <a href="http://localhost:63342/wjn161.github.io/pages/photos.html" class="button">Photos</a>
             <br>
-            <a href="http://168miles.com/pages/about.html" class="button">About</a>
+            <a href="http://localhost:63342/wjn161.github.io/pages/about.html" class="button">About</a>
             <br>
             <a href="http://github.com/wjn161" target="_blank" class="button">GitHub</a>
         </div>
 </div>
-            </ul>
-            <div style="clear:both;"></div>
-        </div>
+    <div class="content">
+        <div class="article-body">
         <div id="article-title">
-            <a href="/articles/papery-quickstart.html">Papery快速指南</a>
+            <h1>
+                <a href="http://localhost:63342/wjn161.github.io/articles/papery-quickstart.html">Papery快速指南</a>
+            </h1>
         </div>
         <div id="article-meta">
             作者 wujn | 发布于 2013-01-02 15:56
         </div>
         <div id="article-tags">
         
-        <a class="tag" href="/tag.html#Papery">Papery</a>
+        <a class="tag" href="http://localhost:63342/wjn161.github.io/tag.html#Papery">Papery</a>
         
-        <a class="tag" href="/tag.html#指南">指南</a>
+        <a class="tag" href="http://localhost:63342/wjn161.github.io/tag.html#指南">指南</a>
         
         </div>
         <div id="article-content">
-            <p>Papery - create your simple, fast &amp; elegant blog with plain text.</p>
-<h1 id="使用说明">使用说明</h1>
-<h2 id="安装及升级">安装及升级</h2>
+            <h2 id="安装及升级">安装及升级</h2>
 <p>首先要保证机器上安装有<a href="http://nodejs.org/">NodeJS</a>及<a href="https://npmjs.org/">npm</a>。</p>
 <p>NodeJs版本需要&gt;=0.10。</p>
 <h3 id="安装">安装</h3>
@@ -224,13 +217,9 @@ $$e^{i\pi}+1=0$$</p>
 <p>效果：</p>
 <!-- toc -->
 
-<ul>
-<li><a href="#使用说明">使用说明</a><ul>
-<li><a href="#安装及升级">安装及升级</a><ul>
-<li><a href="#安装">安装</a></li>
-<li><a href="#升级">升级</a></li>
-</ul>
-</li>
+<pre>* [安装](#安装)
+* [升级](#升级)
+</pre><ul>
 <li><a href="#命令列表">命令列表</a><ul>
 <li><a href="#create">create</a></li>
 <li><a href="#build">build</a></li>
@@ -252,9 +241,6 @@ $$e^{i\pi}+1=0$$</p>
 <li><a href="#单行数学公式">单行数学公式</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#高级使用">高级使用</a><ul>
 <li><a href="#扩展配置及自定义模板">扩展配置及自定义模板</a><ul>
 <li><a href="#自定义模板">自定义模板</a></li>
 </ul>
@@ -266,16 +252,11 @@ $$e^{i\pi}+1=0$$</p>
 <li><a href="#footerplugin">footer_plugin</a></li>
 <li><a href="#articlefooterplugin">article_footer_plugin</a></li>
 <li><a href="#常用插件推荐">常用插件推荐</a></li>
+<li><a href="#开发">开发</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#开发">开发</a><ul>
 <li><a href="#代码库">代码库</a></li>
 <li><a href="#运行单元测试">运行单元测试</a></li>
-</ul>
-</li>
-<li><a href="#license">License</a></li>
 </ul>
 <!-- toc stop -->
 
@@ -284,7 +265,6 @@ $$e^{i\pi}+1=0$$</p>
 <pre class="prettyprint linenums lang-html">&lt;!-- toc --&gt;
 </pre>
 <p>会在当前位置根据文章outline自动生成TOC。</p>
-<h1 id="高级使用">高级使用</h1>
 <h2 id="扩展配置及自定义模板">扩展配置及自定义模板</h2>
 <h3 id="自定义模板">自定义模板</h3>
 <p>papery使用<a href="https://github.com/visionmedia/ejs">ejs</a>作为模板引擎。模板文件全部放在templates目录下，后缀名为ejs。对于有html基础的用户可以自己对模板进行定制。</p>
@@ -344,28 +324,27 @@ $$e^{i\pi}+1=0$$</p>
 <pre class="prettyprint linenums lang-bash">cd papery
 npm test
 </pre>
-<h1 id="license">License</h1>
-<p><a href="http://opensource.org/licenses/MIT">The MIT License (MIT)</a></p>
-<p>Copyright (c) 2013 Eric Zhang</p>
-<p>Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the &quot;Software&quot;), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:</p>
-<p>The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.</p>
-<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.</p>
 
         </div>
+            <div id="article-comment">
+                <!-- 多说评论框 start -->
+                <div class="ds-thread" data-thread-key="papery-quickstart" data-title="Papery快速指南" data-url="/articles/papery-quickstart.html"></div>
+                <!-- 多说评论框 end -->
+                <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+                <script type="text/javascript">
+                    var duoshuoQuery = {short_name:"168miles"};
+                    (function() {
+                        var ds = document.createElement('script');
+                        ds.type = 'text/javascript';ds.async = true;
+                        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                        ds.charset = 'UTF-8';
+                        (document.getElementsByTagName('head')[0]
+                                || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                </script>
+                <!-- 多说公共JS代码 end -->
+            </div>
         
-    </div>
 </div>
 <div class="footer">
     2014  &copy; <a href="http://168miles.com">wujn</a> All right reserved. build with <a href="https://github.com/ericzhang-cn/papery" target="_blank">papery</a>,host on <a href="https://pages.github.com/" target="_blank">github</a>
@@ -377,9 +356,15 @@ THE SOFTWARE.</p>
     document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F11084356a89a17c9912421be76aed474' type='text/javascript'%3E%3C/script%3E"));
 </script>
 
-<script src="http://168miles.com/assets/vendor/jquery.min.js"></script>
-<script src="http://168miles.com/assets/vendor/prism/prism.js"></script>
-<script src="http://168miles.com/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="http://168miles.com/assets/themes/default/index.js"></script>
- </body>
- </html>
+<script src="http://localhost:63342/wjn161.github.io/assets/vendor/jquery.min.js"></script>
+<script src="http://localhost:63342/wjn161.github.io/assets/vendor/prism/prism.js"></script>
+<script src="http://localhost:63342/wjn161.github.io/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://localhost:63342/wjn161.github.io/assets/themes/default/index.js"></script>
+<script  src="http://localhost:63342/wjn161.github.io/assets/vendor/prettifyjs/prettify.js"></script>
+<script>
+    $(function(){
+        prettyPrint();
+    });
+</script>
+</body>
+</html>
