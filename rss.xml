@@ -4,7 +4,7 @@
         <title>168miles</title>
         <link>Homepage link</link>
         <description>A place to record my fucking life and dreams</description>
-        <lastBuildDate>Sat, 11 Oct 2014 16:57:27 +0800</lastBuildDate>
+        <lastBuildDate>Mon, 13 Oct 2014 13:31:37 +0800</lastBuildDate>
         <language>zh-cn</language>
         
         <item>
@@ -261,6 +261,70 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.&lt;/p&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>代码与数学公式示例</title>
+            <link>Homepage link/articles/code-and-math.html?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=rss</link>
+            <guid>Homepage link/articles/code-and-math.html</guid>
+            <author>wjn161@gmail.com wujn</author>
+            <pubDate>Tue, 01 Jan 2013 15:56:00 +0800</pubDate>
+            <description>&lt;h1 id=&quot;这是一段代码&quot;&gt;这是一段代码&lt;/h1&gt;
+&lt;pre class=&quot;prettyprint linenums lang-c&quot;&gt;#include &lt;stdio.h&gt;
+
+int main(int argc, char** argv) {
+    printf(&quot;%s\n&quot;, &quot;Hello, World!&quot;);
+}
+&lt;/pre&gt;
+&lt;h1 id=&quot;这是一些数学公式&quot;&gt;这是一些数学公式&lt;/h1&gt;
+&lt;p&gt;\[e^{i\pi}+1=0\]&lt;/p&gt;
+&lt;p&gt;\[\begin{pmatrix}
+  1/\sqrt{2}  &amp; 1/\sqrt{2} \\
+  -1/\sqrt{2} &amp; 1/\sqrt{2}
+\end{pmatrix}
+\begin{pmatrix}
+  3 \\
+  2
+\end{pmatrix}
+=
+\begin{pmatrix}
+  5/\sqrt{2} \\
+  -1/\sqrt{2}
+\end{pmatrix}\]&lt;/p&gt;
+&lt;p&gt;\[Var(a)=\frac{1}{m}\sum_{i=1}^m{(a_i-\mu)^2}\]&lt;/p&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>代码与数学公式示例</title>
+            <link>Homepage link/articles/code-and-math.html?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=rss</link>
+            <guid>Homepage link/articles/code-and-math.html</guid>
+            <author>wjn161@gmail.com wujn</author>
+            <pubDate>Tue, 01 Jan 2013 15:56:00 +0800</pubDate>
+            <description>&lt;h1 id=&quot;这是一段代码&quot;&gt;这是一段代码&lt;/h1&gt;
+&lt;pre class=&quot;prettyprint linenums lang-c&quot;&gt;#include &lt;stdio.h&gt;
+
+int main(int argc, char** argv) {
+    printf(&quot;%s\n&quot;, &quot;Hello, World!&quot;);
+}
+&lt;/pre&gt;
+&lt;h1 id=&quot;这是一些数学公式&quot;&gt;这是一些数学公式&lt;/h1&gt;
+&lt;p&gt;\[e^{i\pi}+1=0\]&lt;/p&gt;
+&lt;p&gt;\[\begin{pmatrix}
+  1/\sqrt{2}  &amp; 1/\sqrt{2} \\
+  -1/\sqrt{2} &amp; 1/\sqrt{2}
+\end{pmatrix}
+\begin{pmatrix}
+  3 \\
+  2
+\end{pmatrix}
+=
+\begin{pmatrix}
+  5/\sqrt{2} \\
+  -1/\sqrt{2}
+\end{pmatrix}\]&lt;/p&gt;
+&lt;p&gt;\[Var(a)=\frac{1}{m}\sum_{i=1}^m{(a_i-\mu)^2}\]&lt;/p&gt;
 </description>
         </item>
         

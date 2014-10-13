@@ -11,22 +11,16 @@
             <div class="article-item">
                 <h2><a href="articles/<%= ar.id %>.html"><%= ar.title %></a></h2>
                 <p><%= ar.abstract %></p>
-                <div class="article-item-footer"><%= ar.author %> 发布于  <%= ar.postedOn %> </div>
+                <div class="article-item-footer">
+                    <% ar.tags.forEach(function (tag) { %>
+                    <a class='tag' target="_blank" href="<%=site.baseUrl%>/tag.html#<%= tag %>"><%= tag %></a>
+                    <% }) %> |
+                    <%= ar.author %> 发布于  <%= ar.postedOn %>
+                </div>
             </div>
            <% }) %>
         </div>
         <div class="clear"></div>
-        <div class="content-footer">
-            <ul class="pagination color-fix">
-                <li><a href="#">&laquo;</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
-            </ul>
-        </div>
         <script>
             document.title="168miles_notes";
         </script>
