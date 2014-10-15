@@ -372,3 +372,10 @@ a.button[disabled]:hover {
 .page .nav .item .post-list{
     margin-top:30px;
 }
+
+/*tags*/
+#tag-main-container{
+    width:400px; height:400px; margin: 20px auto;position:relative;
+}
+#tag-main-container a {position:absolute; top:0px; left:0px; font-family: Microsoft YaHei; color:#ff6600; font-weight:bold; text-decoration:none; padding: 3px 6px; }
+#tag-main-container a:hover {border: 2px solid #ff6600; background:none; }

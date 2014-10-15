@@ -4,7 +4,7 @@
         <title>168miles</title>
         <link>Homepage link</link>
         <description>A place to record my fucking life and dreams</description>
-        <lastBuildDate>Mon, 13 Oct 2014 16:52:42 +0800</lastBuildDate>
+        <lastBuildDate>Wed, 15 Oct 2014 21:51:20 +0800</lastBuildDate>
         <language>zh-cn</language>
         
         <item>
@@ -12,7 +12,7 @@
             <link>Homepage link/articles/papery-quickstart.html?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=rss</link>
             <guid>Homepage link/articles/papery-quickstart.html</guid>
             <author>wjn161@gmail.com wujn</author>
-            <pubDate>Wed, 02 Jan 2013 15:56:00 +0800</pubDate>
+            <pubDate>Wed, 15 Oct 2014 15:56:00 +0800</pubDate>
             <description>&lt;h2 id=&quot;安装及升级&quot;&gt;安装及升级&lt;/h2&gt;
 &lt;p&gt;首先要保证机器上安装有&lt;a href=&quot;http://nodejs.org/&quot;&gt;NodeJS&lt;/a&gt;及&lt;a href=&quot;https://npmjs.org/&quot;&gt;npm&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;NodeJs版本需要&gt;=0.10。&lt;/p&gt;

@@ -1,8 +1,10 @@
 - id: papery-quickstart
   title: Papery快速指南
-  postedOn: !!str 2013-01-02 15:56
-  author: wujn
-  tags: 
-    - Papery
+  postedOn: !!str 2014-10-15 15:56
+  author: papery
+  tags:
     - 指南
-  abstract: 快速了解如何使用Papery。
+    - Papery
+    - Blog
+    - NodeJs
+  abstract: 快速了解如何使用Papery
