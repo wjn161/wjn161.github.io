@@ -340,6 +340,9 @@ a.button[disabled]:hover {
         width:100%;
         margin-left:0;
     }
+    #tag-main-container{
+        display: none;
+    }
 }
 
 @media all and (max-width: 480px) {
@@ -356,6 +359,9 @@ a.button[disabled]:hover {
 
     #preview .box .nav {
         top:60px;
+    }
+    #tag-main-container{
+        display: none;
     }
 }
 
@@ -374,7 +380,7 @@ a.button[disabled]:hover {
 }
 
 /*tags*/
-#tag-main-container{
+#tag-main-container {
     width:400px; height:400px; margin: 20px auto;position:relative;
 }
 #tag-main-container a {position:absolute; top:0px; left:0px; font-family: Microsoft YaHei; color:#ff6600; font-weight:bold; text-decoration:none; padding: 3px 6px; }
