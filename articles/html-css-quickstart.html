@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="A place to record my fucking life and dreams"/>
+    <meta name="keywords" content="wujn.me,blog,wujn"/>
+    <meta name="author" content="wujn"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>wujn.me_HTML/CSS 快速入门
+</title>
+    <link rel="stylesheet" href="http://wujn.me/assets/vendor/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://wujn.me/assets/vendor/bootstrap/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="http://wujn.me/assets/vendor/prettifyjs/prettify-light.css"/>
+    <link rel="stylesheet" href="http://wujn.me/assets/themes/default/style.css"/>
+    
+</head>
+<body>
+
+<div class="page">
+    <div class="nav">
+        <h1>wujn.me</h1>
+        <p>A place to record my fucking<br>life and dreams.</p>
+        <p>(build on Sep 23th 2014)</p>
+        <div class="item">
+            <a href="http://wujn.me/index.html" class="button">Home</a>
+            <br>
+            <a href="http://wujn.me/list.html" class="button">Notes</a>
+            <br>
+            <a href="http://wujn.me/tag.html" class="button">Tags</a>
+            <br>
+            <a href="http://wujn.me/pages/about.html" class="button">About</a>
+            <br>
+            <a href="http://github.com/wjn161" target="_blank" class="button">GitHub</a>
+        </div>
+</div>
+    <div class="content">
+        <div class="article-body">
+        <div id="article-title">
+            <h1>
+                <a href="http://wujn.me/articles/html-css-quickstart.html">HTML/CSS 快速入门</a>
+            </h1>
+        </div>
+        <div id="article-meta">
+            作者 wujn | 发布于 2014-11-07 11:07
+        </div>
+        <div id="article-tags">
+        
+        <a class="tag" href="http://wujn.me/tag.html#HTML">HTML</a>
+        
+        <a class="tag" href="http://wujn.me/tag.html#CSS">CSS</a>
+        
+        <a class="tag" href="http://wujn.me/tag.html#Web">Web</a>
+        
+        </div>
+        <div id="article-content">
+            <h2 id="html">HTML</h2>
+<p>HTML是一种标记语言，属于XML的子集，是构成网页的最基本的元素之一，赋予了网页语义，HTML定义了一组标签，用来标记不同的内容，比如文字，图片，链接等，目前HTML规范一共定义了<strong>114</strong>个标签（最新的HTML5规范又新增加了几个语义话更强的标签），根据二八原则，大多数时候只需要用30个左右的标签就能实现80%的功能。</p>
+<h3 id="标签">标签</h3>
+<p>常见的标签有p标签(段落)，a标签(链接)，img标签(图片)等,常用的HTML标签<a href="http://www.w3school.com.cn/tags/html_ref_byfunc.asp">参考列表</a>。</p>
+<h4 id="标签闭合">标签闭合</h4>
+<p>对于每个包含内容的元素，根据他们是不是包含文本，有2种不同的方式给它们添加标记，一种是使用闭合标签，另一种是使用非闭合标签。</p>
+<pre class="prettyprint linenums lang-html"> &lt;标签&gt;内容&lt;/标签&gt;
+ &lt;标签 属性1=&quot;属性值&quot; /&gt;
+</pre>
+<pre>对于旧版XHTML来说，要求比较严格，每个标签都必须是严格闭合的，但是新版的HTML5标准相对比较宽松，并不强制要求标签必须闭合.即：&lt;img src=&quot;&quot; alt=&quot;&quot; &gt;这种情况也是符合标准的。
+</pre><h4 id="属性">属性</h4>
+<h4 id="复合元素">复合元素</h4>
+<h4 id="标签嵌套">标签嵌套</h4>
+<h4 id="标签文档模板-html5-">标签文档模板(HTML5)</h4>
+<pre class="prettyprint linenums lang-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;/&gt;
+        &lt;title&gt;This is Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello World!&lt;/h1&gt;
+        &lt;p&gt;.....&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<h3 id="块级元素和行内元素">块级元素和行内元素</h3>
+
+        </div>
+            <div id="article-next">
+                
+                <div class="left">
+                    <span>上一篇:</span>
+                    
+                    <a href="http://wujn.me/articles/honxin-proxy.html">一直红杏出&quot;墙&quot;来,大家懂的</a>
+                    
+                </div>
+                <div class="right">
+                    <span>下一篇:</span>
+                    
+                    <span>没有了!</span>
+                    
+                </div>
+            </div>
+            <div id="article-comment">
+                <!-- 多说评论框 start -->
+                <div class="ds-thread" data-thread-key="html-css-quickstart" data-title="HTML/CSS 快速入门" data-url="/articles/html-css-quickstart.html"></div>
+                <!-- 多说评论框 end -->
+                <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+                <script type="text/javascript">
+                    var duoshuoQuery = {short_name:"168miles"};
+                    (function() {
+                        var ds = document.createElement('script');
+                        ds.type = 'text/javascript';ds.async = true;
+                        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                        ds.charset = 'UTF-8';
+                        (document.getElementsByTagName('head')[0]
+                                || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                </script>
+                <!-- 多说公共JS代码 end -->
+            </div>
+        
+</div>
+<div class="footer">
+    2014  &copy; <a href="http://wujn.me">wujn</a> All right reserved. build with <a href="https://github.com/ericzhang-cn/papery" target="_blank">papery</a>,host on <a href="https://pages.github.com/" target="_blank">github</a>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F11084356a89a17c9912421be76aed474' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script src="http://wujn.me/assets/vendor/jquery.min.js"></script>
+<script src="http://wujn.me/assets/vendor/prism/prism.js"></script>
+<script src="http://wujn.me/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://wujn.me/assets/themes/default/index.js"></script>
+<script  src="http://wujn.me/assets/vendor/prettifyjs/prettify.js"></script>
+<script>
+    $(function(){
+        prettyPrint();
+    });
+</script>
+<!--[if lt IE 8]>
+<div style="position: fixed;width: 100%; height: 50px; background-color: darkred;text-align: center;bottom: 0;left:0;">
+    <p style="font-size:14px; font-weight: bold; color: #ffffff; line-height: 26px; padding: 12px;">抱歉，您使用的浏览器不在本站的支持范围之内，若要继续浏览，请<a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie">升级</a>或<a href="http://www.firefox.com.cn/download/">更换</a>浏览器！</p>
+</div>
+<![endif]-->
+</body>
+</html>

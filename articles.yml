@@ -7,4 +7,51 @@
     - Papery
     - Blog
     - NodeJs
-  abstract: 快速了解如何使用Papery
+  abstract: 快速了解如何使用Papery.
+- id: about-this-blog
+  title: 关于本博客搭建的一些技术细节
+  postedOn: !!str 2014-10-15 23:06
+  author: wujn
+  tags:
+    - Papery
+    - Blog
+    - NodeJs
+    - GitHub
+    - DnsPod
+  abstract: 如何利用papery,gitpages以及dnspod等服务搭建一个静态博客
+- id: honxin-proxy
+  title: 一直红杏出"墙"来,大家懂的
+  postedOn: !!str 2014-10-22 09:06
+  author: wujn
+  tags:
+    - Proxy
+    - VPN
+    - Google
+    - honxin
+    - 翻墙
+    - 红杏
+  abstract: 使用红杏科学上网工具，帮助你遨游自由的互联网世界
+- id: java-note-01
+  title: Java笔记-Java语言基础(第一部分)
+  postedOn: !!str 2015-04-05 19:07
+  author: wujn
+  tags:
+  - JAVA
+  - JRE
+  - JDK
+  - JVM
+  - 学习笔记
+  - 字符集
+  abstract: 多年之后重新从零开始学习Java，从笔记的角度记录了一些Java的语言基础，包括JDK,JRE,JVM的关系，Java字符集的问题，命名规范等内容
+- id: build-redis-use-docker
+  title: 使用Docker搭建一个Redis的开发环境
+  postedOn: !!str 2015-04-26 22:54
+  author: wujn
+  tags:
+  - redis
+  - docker
+  - dockerfile
+  - vm
+  - mysql
+  - proxy
+  abstract: 文章描述了如何使用Docker搭建一个Redis的开发环境，最后还演示了如果通过远程DockerFile来快速搭建一个Mysql的开发环境

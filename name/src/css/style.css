@@ -1,0 +1,104 @@
+body {
+    position: relative;
+}
+
+.margin-top {
+    height: 80px;
+}
+
+.left-nav {
+    margin-top: 10px;
+    height: 100%;
+}
+
+    .left-nav ul {
+        position: fixed;
+        width: 230px;
+    }
+
+
+.main-content {
+    height: 100%;
+    min-height: 800px;
+}
+
+    .main-content h1, h2, h3, h4, h5 {
+        font-family: "Microsoft YaHei";
+    }
+
+.typeahead-widthfixed {
+    width: 210px;
+    overflow: hidden;
+}
+
+.main-content p {
+    text-indent: 2em;
+    padding: 2px 0;
+    line-height: 24px;
+    font-family: "Microsoft YaHei";
+}
+
+.main-content blockquote p {
+    text-indent: 2em;
+    padding: 2px 0;
+    line-height: 24px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+}
+.main-content > ol li, .main-content > ul li {
+    padding: 2px 0;
+    line-height: 22px;
+     font-family: "Microsoft YaHei";
+}
+
+.main-content h2 {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px auto;
+    font-size: 22px;
+    line-height: 34px;
+    color: #ffffff;
+    background-color: #dd4814;
+}
+
+.main-content h3 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.main-content h4 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.footer {
+    border-top: 1px solid #dd4814;
+    margin-top: 50px;
+    height: 100px;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.main-content ul li p, .main-content ol li p {
+    text-indent: 5px;
+}
+
+@media screen and (max-width: 720px) {
+    .left-nav ul {
+        position: inherit;
+        width: 100%;
+    }
+
+     .margin-top2 {
+        margin-top: 140px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar .container form {
+        display: none;
+    }
+    .margin-top2 {
+        margin-top: 140px;
+    }
+}

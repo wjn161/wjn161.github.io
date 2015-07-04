@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="A place to record my fucking life and dreams"/>
+    <meta name="keywords" content="wujn.me,blog,wujn"/>
+    <meta name="author" content="wujn"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"/>
+    <title>wujn.me_Java笔记-Java语言基础(第一部分)
+</title>
+    <link rel="stylesheet" href="http://blog.wujn.me/assets/vendor/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://blog.wujn.me/assets/vendor/bootstrap/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="http://blog.wujn.me/assets/vendor/prettifyjs/prettify-light.css"/>
+    <link rel="stylesheet" href="http://blog.wujn.me/assets/themes/default/style.css"/>
+    
+</head>
+<body>
+
+<div class="page">
+    <div class="nav">
+        <h1>wujn.me</h1>
+        <p>A place to record my fucking<br>life and dreams.</p>
+        <p>(build on Sep 23th 2014)</p>
+        <div class="item">
+            <a href="http://blog.wujn.me/index.html" class="button">Home</a>
+            <br>
+            <a href="http://blog.wujn.me/list.html" class="button">Notes</a>
+            <br>
+            <a href="http://blog.wujn.me/tag.html" class="button">Tags</a>
+            <br>
+            <a href="http://blog.wujn.me/pages/about.html" class="button">About</a>
+            <br>
+            <a href="http://github.com/wjn161" target="_blank" class="button">GitHub</a>
+        </div>
+</div>
+    <div class="content">
+        <div class="article-body">
+        <div id="article-title">
+            <h1>
+                <a href="http://blog.wujn.me/articles/java-note-01.html">Java笔记-Java语言基础(第一部分)</a>
+            </h1>
+        </div>
+        <div id="article-meta">
+            作者 wujn | 发布于 2015-04-05 19:07
+        </div>
+        <div id="article-tags">
+        
+        <a class="tag" href="http://blog.wujn.me/tag.html#JAVA">JAVA</a>
+        
+        <a class="tag" href="http://blog.wujn.me/tag.html#JRE">JRE</a>
+        
+        <a class="tag" href="http://blog.wujn.me/tag.html#JDK">JDK</a>
+        
+        <a class="tag" href="http://blog.wujn.me/tag.html#JVM">JVM</a>
+        
+        <a class="tag" href="http://blog.wujn.me/tag.html#学习笔记">学习笔记</a>
+        
+        <a class="tag" href="http://blog.wujn.me/tag.html#字符集">字符集</a>
+        
+        </div>
+        <div id="article-content">
+            <h2 id="目录">目录</h2>
+<!-- toc -->
+<ul>
+<li><a href="#jdkjrejvm说明">JDK,JRE,JVM说明</a></li>
+<li><a href="#java开发环境配置">Java开发环境配置</a><ul>
+<li><a href="#1-下载jdk并安装">1. 下载JDK并安装</a></li>
+<li><a href="#2-配置系统环境变量">2. 配置系统环境变量</a></li>
+<li><a href="#3-验证">3. 验证</a></li>
+</ul>
+</li>
+<li><a href="#hello-world">Hello World</a></li>
+<li><a href="#java语言基础">JAVA语言基础</a><ul>
+<li><a href="#1-字符集">1. 字符集</a></li>
+<li><a href="#2-数据类型">2. 数据类型</a></li>
+<li><a href="#3-运算符">3. 运算符</a></li>
+<li><a href="#4-命名规范">4. 命名规范</a></li>
+</ul>
+</li>
+</ul>
+<!-- toc stop -->
+<hr>
+<h2 id="jdk-jre-jvm说明">JDK,JRE,JVM说明</h2>
+<ul>
+<li><strong>JVM</strong>
+JAVA虚拟机，JAVA的代码执行引擎，执行编译后的.class文件，是一个规范，类似于CLR。</li>
+<li><strong>JRE</strong>
+JAVA运行环境，面向JAVA程序用户，可以让系统运行JAVA应用程序，类似于.Net Framework。（JRE=JVM+JAVA标准核心类库）
+framework </li>
+<li><strong>JDK</strong>
+JAVA 开发套件，面向开发者，在JRE和JVM之外还包含了一些工具类库和调试工具，类似于.Net Framework SDK</li>
+</ul>
+<p>JDK&gt;JRE&gt;JVM，他们是包含关系,如图：</p>
+<p><img src="http://7tsy9a.com1.z0.glb.clouddn.com/mewujnjava/01/000.png" alt="jvm"></p>
+<p>在Windows的JDK安装路径中(C:\Program Files\Java\jdk1.8.0_05)，可以看到JDK中包含了JRE，JRE的bin中有一个JVM.dll 用于加载其他的jar包来共同执行JAVA应用程序。</p>
+<blockquote>
+<p>参考：<a href="http://www.cnblogs.com/xiaofeixiang/p/4085159.html">http://www.cnblogs.com/xiaofeixiang/p/4085159.html</a></p>
+</blockquote>
+<h2 id="java开发环境配置">Java开发环境配置</h2>
+<h3 id="1-下载jdk并安装">1. 下载JDK并安装</h3>
+<p>下载链接 <a href="http://www.oracle.com/technetwork/cn/java/javase/downloads/jdk8-downloads-2133151-zhs.html">http://www.oracle.com/technetwork/cn/java/javase/downloads/jdk8-downloads-2133151-zhs.html</a> </p>
+<h3 id="2-配置系统环境变量">2. 配置系统环境变量</h3>
+<ul>
+<li>新建系统变量JAVA_HOME,值为C:\Program Files\Java\jdk1.8.0_05</li>
+<li>查找系统变量Path,增加值为%JAVA_HOME%\bin;</li>
+<li>新建系统变量classpath ,值为.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar; (.;一定不能少，因为它代表当前路径) 
+<em>(JDK5.0之后不需要此步骤)</em></li>
+</ul>
+<h3 id="3-验证">3. 验证</h3>
+<p>1.在Windows下 按win+R 出现运行窗口，输入 %JAVA_HOME%,看是否进入 C:\Program Files\Java\jdk1.8.0_05 文件夹</p>
+<p><img src="http://7tsy9a.com1.z0.glb.clouddn.com/mewujnjava/01/003.png" alt="jdk"></p>
+<p>2.然后打开控制台（Win+R,输入cmd）输入 java -version 如果会出现如下信息，就证明配置成功</p>
+<p><img src="http://7tsy9a.com1.z0.glb.clouddn.com/mewujnjava/01/002.png" alt="jdk"></p>
+<h2 id="hello-world">Hello World</h2>
+<p>新建一个文件夹，取名helloworld(最好不要用中文)
+进入文件夹，新建一个文本文件，名字为helloworld.java,扩展名为.java，并输入代码</p>
+<pre><code class="prettyprint linenums lang-java">public class HelloWorld {
+    public static void main(String[] args){
+        System.out.println(&quot;hello world&quot;);
+    }
+}
+</code></pre>
+<ul>
+<li>在控制台中进入到之前建的目录 C:\Users\xxx\Desktop\JavaDev\helloworld 输入 javac helloworld.java 然后再输入 java helloworld 程序会输入 hello world</li>
+</ul>
+<p><img src="http://7tsy9a.com1.z0.glb.clouddn.com/mewujnjava/01/004.png" alt="jdk"></p>
+<p>几个注意的问题</p>
+<ul>
+<li>执行javac编译的时候会生成一个class文件，每个类对应一个class文件。一个java文件中可以有多个类，但是public类只能有一个，public的类名必须与java文件名称一致，大小写敏感。</li>
+<li>因为每个类都会生产一个class文件，所以class文件与java文件可以是多对一的关系。</li>
+<li>javac和java 等命令 都是一些exe文件存在于JAVA_HOME中，功能非常丰富，具体可以在控制台中输入 javac -help 查看</li>
+<li>编译UTF-8格式的java文件时会报gbk的编码错误，需要在javac中加入encoding，命令： javac -encoding UTF-8 HelloWorld.java</li>
+</ul>
+<h2 id="java语言基础">JAVA语言基础</h2>
+<h3 id="1-字符集">1. 字符集</h3>
+<p>JAVA内置使用的是Unicode字符集（变量名等支持多种语言，推荐用英文)，源代码文件字符集推荐使用UTF-8。</p>
+<blockquote>
+<p>参考: <a href="http://www.cnblogs.com/skynet/archive/2011/05/03/2035105.html">http://www.cnblogs.com/skynet/archive/2011/05/03/2035105.html</a></p>
+</blockquote>
+<h3 id="2-数据类型">2. 数据类型</h3>
+<p><strong>原始数据类型</strong>：数值(byte/short/int/long/float/double) 字符(char) 布尔(boolean)</p>
+<pre><code class="prettyprint linenums lang-java">byte b;//1个字节，8个bit(2的8次方256)，范围-128-127
+short s;//2个字节，2的16次方(65536)，范围 -32768-32767
+int i; //4个字节 2的32次方(4294967296)，范围-2147483648-2147483647
+long l;//8个字节 2的64次方
+float f;//4字节单精度 
+double d;//8字节双精度
+</code></pre>
+<blockquote>
+<p>最好不要使用浮点数比较，会因为精度的问题出错。精度问题参考：<a href="http://zh.wikipedia.org/wiki/IEEE_754">http://zh.wikipedia.org/wiki/IEEE_754</a></p>
+</blockquote>
+<p>数值常量默认是int类型int i=10;浮点型默认为double类型，如果要声明其他类型的常量，需要在尾部带字母，如long i=100L中的i为long类型，类似的有</p>
+<pre><code class="prettyprint linenums lang-java">int i=10;
+long l=100L;
+float f=1.9F;
+double d=1.0D;
+</code></pre>
+<p>数值8进制和16进制以0(零)开头，8进制中最大为8，于是010就是8，10在8进制中表示为012，16进制带字母，儿进制为0b开头。</p>
+<pre><code class="prettyprint linenums lang-java">int oct=010; //8进制.8
+int hex=0xf; //16进制.15
+int binary=0b010 //2进制.2
+</code></pre>
+<p><strong>引用数据类型</strong></p>
+<h3 id="3-运算符">3. 运算符</h3>
+<p>特别的几个需要注意：</p>
+<ol>
+<li>instanceof 是否是某个类的对象判断，只能用于引用类型，不能用于基础类型，isAssignableFrom可以用于所有类型</li>
+<li>二进制位运算 (^是异或运算，互斥，相同为0，不同为1)</li>
+<li>移位运算&lt;&lt; &gt;&gt; (<strong>&lt;&lt;左移1位是num乘2</strong>，<strong>&gt;&gt;右移1位是num除2</strong>) </li>
+<li>(&gt;&gt;&gt;)(按位右移不足补0),表示无符号右移, expression1&gt;&gt;&gt;expression2 运算符把 expression1 的各个位向右移 expression2 指定的位数。右移后左边空出的位用零来填充。移出右边的位被丢弃。</li>
+</ol>
+<h3 id="4-命名规范">4. 命名规范</h3>
+<ul>
+<li>package包的命名（全部小写，由域名定义）如 me.wujn.helloworld</li>
+<li>类的命名 （单词首字母大写） 如 HelloWorld</li>
+<li>方法的命名 （首字母小写，字母开头大写）如 sayHello()</li>
+<li>常量的命名 （全部大写 ，常加下划线） 如 final int MAX_AGE=25;</li>
+<li>变量命名 (单个单词全小写，多个单词首字母小写，后面单词开头大写) </li>
+<li>实现接口的类命名 (以Impl结尾) 如 HelloWorldImpl:IHelloWorldService</li>
+<li>异常以及测试类命名 (以xxxxException和xxxTest结尾) 如 RuntimeException 和 HelloWorldTest</li>
+<li>注释规范以javadoc的规范为参考</li>
+</ul>
+
+        </div>
+            <div id="article-next">
+                
+                <div class="left">
+                    <span>上一篇:</span>
+                    
+                    <a href="http://blog.wujn.me/articles/honxin-proxy.html">一直红杏出&quot;墙&quot;来,大家懂的</a>
+                    
+                </div>
+                <div class="right">
+                    <span>下一篇:</span>
+                    
+                    <a href="http://blog.wujn.me/articles/build-redis-use-docker.html">使用Docker搭建一个Redis的开发环境</a>
+                    
+                </div>
+            </div>
+			<div id="div-share">
+			<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+			</div>
+            <div id="article-comment">
+                <!-- 多说评论框 start -->
+                <div class="ds-thread" data-thread-key="java-note-01" data-title="Java笔记-Java语言基础(第一部分)" data-url="/articles/java-note-01.html"></div>
+                <!-- 多说评论框 end -->
+                <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+                <script type="text/javascript">
+                    var duoshuoQuery = {short_name:"168miles"};
+                    (function() {
+                        var ds = document.createElement('script');
+                        ds.type = 'text/javascript';ds.async = true;
+                        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                        ds.charset = 'UTF-8';
+                        (document.getElementsByTagName('head')[0]
+                                || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                </script>
+                <!-- 多说公共JS代码 end -->
+            </div>
+        
+</div>
+<div class="footer">
+    2014  &copy; <a href="http://blog.wujn.me">wujn</a> All right reserved. build with <a href="https://github.com/ericzhang-cn/papery" target="_blank">papery</a>,host on <a href="https://pages.github.com/" target="_blank">github</a>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F11084356a89a17c9912421be76aed474' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script src="http://blog.wujn.me/assets/vendor/jquery.min.js"></script>
+<script src="http://blog.wujn.me/assets/vendor/prism/prism.js"></script>
+<script src="http://blog.wujn.me/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://blog.wujn.me/assets/themes/default/index.js"></script>
+<script  src="http://blog.wujn.me/assets/vendor/prettifyjs/prettify.js"></script>
+<script>
+    $(function(){
+        prettyPrint();
+    });
+</script>
+<!--[if lt IE 8]>
+<div style="position: fixed;width: 100%; height: 50px; background-color: darkred;text-align: center;bottom: 0;left:0;">
+    <p style="font-size:14px; font-weight: bold; color: #ffffff; line-height: 26px; padding: 12px;">抱歉，您使用的浏览器不在本站的支持范围之内，若要继续浏览，请<a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie">升级</a>或<a href="http://www.firefox.com.cn/download/">更换</a>浏览器！</p>
+</div>
+<![endif]-->
+</body>
+</html>

@@ -1,10 +1,10 @@
-title: 168miles
+title: wujn.me
 subtitle: A place to record my fucking life and dreams
 link: Homepage link
 meta:
   description: A place to record my fucking life and dreams
   keywords: !!seq
-    - 168miles
+    - wujn.me
     - blog
     - wujn
   author: wujn
@@ -13,7 +13,7 @@ master:
   about: wujn
   email: wjn161@gmail.com
 rss:
-  title: 168miles
+  title: wujn.me
   desc: A place to record my fucking life and dreams
   lang: zh-cn
   max: 10
@@ -23,4 +23,4 @@ copyright:
   endYear: 2014
 theme: default
 codetheme: light
-baseUrl: http://168miles.com
+baseUrl: http://blog.wujn.me

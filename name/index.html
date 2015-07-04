@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="zh_CN">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pick A Name</title>
+    <link rel="stylesheet" href="src/js/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="./index.html" class="navbar-brand">Pick A Name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 margin-top"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="main-content" id="mainContent">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 margin-top">
+                            <form class="form-inline">
+                                <div class="form-group">
+                                    <label for="txtName">A Word:</label>
+                                    <input type="text" class="form-control" id="txtName" placeholder="Input A Word">
+                                </div>
+                                <div class="form-group">
+                                    <label for="selPosition">Position:</label>
+                                    <select id="selPosition" class="form-control">
+                                        <option selected="selected" value="1">Before</option>
+                                        <option value="2">After</option>
+                                    </select>
+                                </div>
+                                <a class="btn btn-primary" id="btnPick">I'm Feeling Lucky</a>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 margin-top2">
+                            <div id="result" class="list-group">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="//misc.shumiimg.com/shumijs/src/global/base.js"></script>
+    <script src="src/js/bootstrap/bootstrap.min.js"></script>
+    <script src="src/js/index.js"></script>
+</body>
+</html>

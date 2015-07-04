@@ -1,5 +1,5 @@
 <div class="footer">
-    <%= site.copyright.endYear %>  &copy; <a href="http://168miles.com">wujn</a> All right reserved. build with <a href="https://github.com/ericzhang-cn/papery" target="_blank">papery</a>,host on <a href="https://pages.github.com/" target="_blank">github</a>
+    <%= site.copyright.endYear %>  &copy; <a href="<%=site.baseUrl %>">wujn</a> All right reserved. build with <a href="https://github.com/ericzhang-cn/papery" target="_blank">papery</a>,host on <a href="https://pages.github.com/" target="_blank">github</a>
 </div>
 </div>
 </div>
@@ -14,5 +14,10 @@
         prettyPrint();
     });
 </script>
+<!--[if lt IE 8]>
+<div style="position: fixed;width: 100%; height: 50px; background-color: darkred;text-align: center;bottom: 0;left:0;">
+    <p style="font-size:14px; font-weight: bold; color: #ffffff; line-height: 26px; padding: 12px;">抱歉，您使用的浏览器不在本站的支持范围之内，若要继续浏览，请<a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie">升级</a>或<a href="http://www.firefox.com.cn/download/">更换</a>浏览器！</p>
+</div>
+<![endif]-->
 </body>
 </html>

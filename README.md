@@ -1,3 +1,3 @@
-168miles
+blog.wujn.me
 =====
-site url: [168miles](http://168miles.com)
+site url: [blog.wujn.me](http://blog.wujn.me)

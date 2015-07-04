@@ -3,7 +3,6 @@
  */
 body {
     font-family: microsoft yahei;
-    font-weight: 300;
     background:#fff;
     color: #333;
     font-size:14px;
@@ -241,19 +240,53 @@ a.button[disabled]:hover {
     color: #ffffff;
     background-color: #FF6600;
 }
-.pge .content .article-body #article-comment {
-    padding-bottom: 50px;
+
+.page .content .article-body #article-content blockquote{
+	font-size:14px;
+}
+.page .content .article-body #article-comment {
     margin-bottom: 50px;
 }
+#div-share{
+	margin: 15px auto;
+	float:left;
+	overflow:hidden;
+}
+.page .content .article-body #article-next{
+    margin: 20px auto;
+    display: inline;
+}
+#article-next .left {
+    float: left;
+    width: 350px;
+    overflow: hidden;
+    padding: 5px 20px;
+}
+#article-next .right {
+    float: left;
+    width: 350px;
+    margin-left:100px;
+    overflow: hidden;
+    padding: 5px 20px;
+}
+#article-next .left a,#article-next .right a{
+    color: #0099FF;
+    padding-left: 8px;
+}
+
 .page .content .article-body h3{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
+	font-weight:bold;
 }
 .page .content .article-body p{
     padding: 0;
     text-indent: 2em;
 }
-
+.page .content .article-body ol li p,.page .content .article-body ul li p{
+    padding: 0;
+    text-indent: 0em;
+}
 .page .content .footer {
     padding:40px 20px 0 0;
 }
