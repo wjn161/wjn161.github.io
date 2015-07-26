@@ -8,17 +8,17 @@ I am currently living and working in HangZhou, China.
 You can reach me by
 - [Sina Weibo](http://weibo.com/wjn161)
 - QQ:345734678
-- [wjn161@gmail.com](mailto:wjn161@gmail.com)
+- [wjn-161@163.com](mailto:wjn-161@163.com)
 - [Twitter](http://twitter.com/wjn161)
 
 ## Working On
 ----------
-[**fund123.cn**](http://www.fund123.cn) an e-commerce platform sales financial products,mainly about mutual funds.it's a subsidiary company of [HundSun](http://www.hundsun.com)
+[**fund123.cn**](http://www.fund123.cn) an e-commerce platform sales financial products,mainly about mutual funds.it's a subsidiary company of [Alipay](http://www.alipay.com)
 
 ## Skills
 ----------
 **Familiar with**：
-- C#
+- C#/Java
 - Javascript/jQuery/Angular
 - Css/Html
 - ASP.NET/ASP.NET MVC
